@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145058317360",
+    "project_id": "ckmart-148de",
+    "storage_bucket": "ckmart-148de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145058317360:android:3e9c854ac353326f67d9f5",
+        "android_client_info": {
+          "package_name": "com.example.ck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145058317360-038d7foo2g280h9n5kn82j77uk59cu43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ck",
+            "certificate_hash": "98c766d5f1d86e081fea340d249ceea407b1df63"
+          }
+        },
+        {
+          "client_id": "145058317360-lccr7le2dkce90c83phqptb86j536cq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnRk9DMAVMuuM9d50How8iHSfid6pOk34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145058317360-lccr7le2dkce90c83phqptb86j536cq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

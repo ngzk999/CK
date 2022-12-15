@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sign_in_button/sign_in_button.dart';
+
+import '../services/auth_service.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -69,20 +72,20 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             const Divider(),
-            // Padding(
-            //   padding: const EdgeInsets.symmetric(vertical: 16.0),
-            //   child: SizedBox(
-            //     width: 200.0,
-            //     height: 42.0,
-            //     child: SignInButton(
-            //       Buttons.googleDark,
-            //       elevation: 5.0,
-            //       onPressed: () {
-            //         AuthService().signInWithGoogle();
-            //       },
-            //     ),
-            //   )
-            // )
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
+              child: SizedBox(
+                width: 200.0,
+                height: 42.0,
+                child: SignInButton(
+                  Buttons.googleDark,
+                  elevation: 5.0,
+                  onPressed: () {
+                    AuthService().signInWithGoogle();
+                  },
+                ),
+              )
+            )
           ],
         ),
       ),
