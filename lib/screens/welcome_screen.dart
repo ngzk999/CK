@@ -37,7 +37,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ],
             ),
             const SizedBox(
-              height: 48.0,
+              height: 25.0,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -51,7 +51,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   },
                   minWidth: 200.0,
                   height: 42.0,
-                  child: const Text('Log in'),
+                  child: const Text('Sign in'),
                 ),
               ),
             ),
@@ -73,19 +73,32 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             ),
             const Divider(),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 16.0),
-              child: SizedBox(
-                width: 200.0,
-                height: 42.0,
-                child: SignInButton(
-                  Buttons.googleDark,
-                  elevation: 5.0,
-                  onPressed: () {
-                    AuthService().signInWithGoogle();
-                  },
-                ),
-              )
-            )
+              padding: const EdgeInsets.only(top: 8.0),
+              child: Column(
+                children: [
+                  SignInButton(
+                    Buttons.google,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0)
+                    ),
+                    elevation: 5.0,
+                    onPressed: () {
+                      AuthService().signInWithGoogle();
+                    },
+                  ),
+                  SignInButton(
+                    Buttons.facebookNew,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0)
+                    ),
+                    elevation: 5.0,
+                    onPressed: () {
+                      // AuthService().signInWithGoogle();
+                    },
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

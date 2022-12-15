@@ -16,7 +16,8 @@ class CK extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
         dividerTheme: const DividerThemeData(
-          color: Colors.grey
+          color: Color.fromRGBO(216,132,44,0.75),
+          thickness: 0.75,
         ),
         textTheme: const TextTheme(
           bodyText1: TextStyle(color: Colors.black54),
