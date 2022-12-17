@@ -37,9 +37,9 @@ class AuthService {
     final userData = await FacebookAuth.instance.getUserData();
 
     final facebookAuthCredential = FacebookAuthProvider.credential(facebookLoginResult.accessToken!.token);
-    await FirebaseAuth.instance.signInWithCredential(facebookAuthCredential);
+    final UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(facebookAuthCredential);
 
-    print(userData);
+    print(userCredential);
   }
 
   signOut() {

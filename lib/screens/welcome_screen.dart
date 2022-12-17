@@ -133,7 +133,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       borderRadius: BorderRadius.circular(8.0)),
                   elevation: 5.0,
                   onPressed: () {
-                    // AuthService().signInWithGoogle();
+                    AuthService().signInWithFacebook();
                   },
                 ),
               ],
